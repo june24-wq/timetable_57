@@ -96,6 +96,11 @@ public final class Main {
         Semester semester = Semester.defaultSemester();
 
         switch (command) {
+            case "about": {
+                System.out.println("Timetable CLI " + VERSION + " · 课程表查询工具");
+                System.out.println("作者：王朋 · 许可证：MIT · 仓库：github.com/june24-wq/timetable_57");
+                break;
+            }
             case "all":
             case "week": {
                 int week = resolveWeek(optional(argv, 1), semester);
