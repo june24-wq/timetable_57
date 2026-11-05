@@ -101,6 +101,11 @@ public final class Main {
                 System.out.println("提示：用 all 查看整周课表，用 day <星期> 查看单日课表。");
                 break;
             }
+            case "about": {
+                System.out.println("Timetable CLI " + VERSION + " · 课程表查询工具");
+                System.out.println("作者：王朋 · 许可证：MIT · 仓库：github.com/june24-wq/timetable_57");
+                break;
+            }
             case "all":
             case "week": {
                 int week = resolveWeek(optional(argv, 1), semester);
