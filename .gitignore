@@ -1,0 +1,50 @@
+# 编译产物
+out/
+bin/
+*.class
+*.jar
+out/sources.txt
+
+# 验证用临时编译目录（本地自测，不入库）
+verify_out/
+verify_out*/
+
+# 构建工具（本项目不使用 Maven / Gradle，防止误提交）
+target/
+build/
+.gradle/
+nbproject/
+nbbuild/
+dist/
+
+# IDE 配置
+.idea/
+*.iml
+.vscode/
+*.ipr
+*.iws
+.settings/
+.project
+.classpath
+.metadata/
+
+# 操作系统生成文件
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+._*
+
+# 本地运行日志与临时文件
+*.log
+logs/
+temp/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~
+
+# 导出的课表文本（个人存档，不入库）
+week*.txt
+timetable-export*.txt
