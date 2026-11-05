@@ -96,6 +96,11 @@ public final class Main {
         Semester semester = Semester.defaultSemester();
 
         switch (command) {
+            case "today": {
+                System.out.println("今天日期：" + LocalDate.now());
+                System.out.println("提示：用 all 查看整周课表，用 day <星期> 查看单日课表。");
+                break;
+            }
             case "all":
             case "week": {
                 int week = resolveWeek(optional(argv, 1), semester);
